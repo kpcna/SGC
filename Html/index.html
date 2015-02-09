@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Main Page - Codeployer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/justified-nav.css" />    
+    <link rel="stylesheet" href="jquery/jstree_dist/themes/default/style.min.css" /> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>	
+	    
+</head>
+<body>
+	
+	    <div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Codeployer</h3>
+        <div role="navigation">
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Web Application</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <script src="jquery/jstree_dist/jstree.min.js"></script>
+	  <div class="maincontent">
+	  
+	  <div class="row">	    
+	    <div class="col-xs-6 col-md-4">
+		  <div class="panel panel-default">
+		  <div class="panel-heading">Navigation</div>
+		  	  <div class="panel-body">			  
+				<div id="container"></div>
+			  </div>	  
+		  </div>
+	    </div>
+	    <div class="col-xs-12 col-md-8">
+		  <div class="panel panel-default">
+		  <div class="panel-heading" id="business">Panel Content</div>
+		  <div class="panel-body">		
+			<form id="foo">
+				<div class="input_fields_wrap">
+					<button class="add_field_button">Add More Fields</button>
+					<div class="form-group"><input type="text" name="mytext[]" class="form-control" placeholder="Text input"></div>
+				</div>	
+				
+				<div class="form-group">
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" value="" class="form-control" placeholder="Text input" />
+				</div>
+				<input type="submit" value="Send" class="btn btn-default"  />				
+		
+				<div id="output" class="help-block"></div>									
+			</form>
+		  </div>
+		  </div>
+	    </div>
+	  </div>
+	  
+	  </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; AnrDev 2015</p>
+      </footer>
+
+    </div>
+	
+	<script src="js/TreeViewHandler.js"></script>
+	<script src="js/AddNewFieldsHandler.js"></script>
+	<script src="js/ServiceHandler.js"></script>
+	
+</body>
+</html>
+
+
+
