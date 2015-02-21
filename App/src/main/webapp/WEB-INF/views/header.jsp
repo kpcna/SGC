@@ -10,9 +10,12 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
-
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/cytoscapejs/style.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/justified-nav.css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/jquery/jstree_dist/themes/default/style.min.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  	<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/cytoscapejs/code.js"></script> 
 </head>
 <body>
 	
@@ -31,8 +34,7 @@
         </div>
       </div>
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="${pageContext.request.contextPath}/resources/jquery/jstree_dist/jstree.min.js"></script>
+      <script src="${pageContext.request.contextPath}/resources/jquery/jstree_dist/jstree.min.js"></script>   
 	  <div class="maincontent">
 	  
 	  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
