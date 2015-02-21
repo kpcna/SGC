@@ -10,13 +10,14 @@ $('#cy').cytoscape({
     .selector('node')
       .css({
         'shape': 'data(faveShape)',
-        'width': 'mapData(weight, 40, 80, 20, 60)',
+        'width': '50',
         'content': 'data(name)',
         'text-valign': 'center',
-        'text-outline-width': 2,
-        'text-outline-color': 'data(faveColor)',
+        'text-outline-width': 1,
+        'text-outline-color': '#000000',
         'background-color': 'data(faveColor)',
-        'color': '#fff'
+        'color': '#fff',
+	'font-size': '12'
       })
     .selector(':selected')
       .css({
@@ -46,24 +47,18 @@ $('#cy').cytoscape({
   
   elements: {
     nodes: [
-      { data: { id: 'j', name: 'Jerry', weight: 65, faveColor: '#6FB1FC', faveShape: 'triangle' } },
-      { data: { id: 'e', name: 'Elaine', weight: 45, faveColor: '#EDA1ED', faveShape: 'ellipse' } },
-      { data: { id: 'k', name: 'Kramer', weight: 75, faveColor: '#86B342', faveShape: 'octagon' } },
-      { data: { id: 'g', name: 'George', weight: 70, faveColor: '#F5A45D', faveShape: 'rectangle' } }
+      { data: { id: 'j', name: 'LOG515', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 300, y: 250 },locked:true },
+      { data: { id: 'e', name: 'MAT150', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 100, y: 100 },locked:true },
+      { data: { id: 'k', name: 'PHY150', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 100, y: 150 },locked:true },
+      { data: { id: 'g', name: 'COM101', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 100, y: 200 },locked:true },
+      { data: { id: 'h', name: 'PHY330', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 200, y: 150 },locked:true },
+      { data: { id: 'l', name: 'LOG240', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 100, y: 250 },locked:true },
+      { data: { id: 'm', name: 'LOG330', weight: 45, faveColor: '#33334C', faveShape: 'rectangle' }, renderedPosition: { x: 200, y: 250 },locked:true },
     ],
     edges: [
-      { data: { source: 'j', target: 'e', faveColor: '#6FB1FC', strength: 90 } },
-      { data: { source: 'j', target: 'k', faveColor: '#6FB1FC', strength: 70 } },
-      { data: { source: 'j', target: 'g', faveColor: '#6FB1FC', strength: 80 } },
-     
-      { data: { source: 'e', target: 'j', faveColor: '#EDA1ED', strength: 95 } },
-      { data: { source: 'e', target: 'k', faveColor: '#EDA1ED', strength: 60 }, classes: 'questionable' },
-      
-      { data: { source: 'k', target: 'j', faveColor: '#86B342', strength: 100 } },
-      { data: { source: 'k', target: 'e', faveColor: '#86B342', strength: 100 } },
-      { data: { source: 'k', target: 'g', faveColor: '#86B342', strength: 100 } },
-      
-      { data: { source: 'g', target: 'j', faveColor: '#F5A45D', strength: 90 } }
+      { data: { source: 'k', target: 'h', faveColor: '#33334C', strength: 20 } },
+      { data: { source: 'l', target: 'm', faveColor: '#33334C', strength: 50 } },
+      { data: { source: 'm', target: 'j', faveColor: '#33334C', strength: 40 } }
     ]
   },
   
